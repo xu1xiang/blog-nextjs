@@ -3,15 +3,14 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import type { AppProps } from 'next/app'
-import TopBar from '../components/TopBar'
+import AppLayout from '../layouts/AppLayout'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <TopBar />
+    <AppLayout>
       <Component {...pageProps} />
-    </>
+    </AppLayout>
   )
 }
 
